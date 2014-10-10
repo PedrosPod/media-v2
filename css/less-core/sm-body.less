@@ -395,6 +395,8 @@
 			font-weight: 700;
 			text-align: center;
 			color: @cl-white;
+
+
 		}
 
 		svg
@@ -451,6 +453,25 @@
 	
 	
 	// add on classes
+
+
+	&.blank
+	{
+		& > a
+		{
+			em
+			{
+				// visual
+				border: 1px solid @border-cl-light;
+				background: none;
+
+				// fonts
+				color: @cl-gray-light;
+				font-weight: 600;
+
+			}
+		}
+	}
 	
 	&.draft
 	{
