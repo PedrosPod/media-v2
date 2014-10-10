@@ -1,0 +1,66 @@
+// FONTS
+
+@font-default: 'Open Sans', sans-serif;
+@font-headings: 'Roboto', sans-serif; 
+
+// COLORS 
+@cl-body: rgba(249, 249, 251, 1);
+@cl-main: rgba(255, 136, 51, 1);
+@cl-sec: rgba(100,100,100,1);
+
+// neutrals
+@cl-white: rgba(255, 255,255, 1);
+@cl-black: rgba(50, 50, 50, 1);
+
+// grays
+@cl-gray: rgba(149, 165, 166, 1);
+	@cl-gray-dark: darken(@cl-gray, 20%);
+	@cl-gray-light: lighten(@cl-gray, 35%);
+	@cl-gray-styled: rgba(81, 93, 110, 1);
+
+// blues
+@cl-blue: rgba(57, 164, 255, 1);
+	@cl-blue-light: lighten(@cl-blue, 35%);
+
+// greens
+@cl-green: rgba(90, 184, 60, 1);
+	@cl-green-light: rgba(176, 200, 164, 1);
+
+// reds
+@cl-red: rgba(228, 85, 57, 1);
+
+// yellows
+
+@cl-yellow: rgba(255, 210, 29, 1);
+	@cl-yellow-dark: darken(@cl-yellow, 10%);
+	@cl-yellow-light: lighten(@cl-yellow, 20%);
+
+
+// DEFAULT PROPERTIES COLORS
+
+@border-cl: rgba(222, 222, 222, 1);
+	@border-cl-light: lighten(@border-cl, 8%);
+
+
+
+// RESPONSIVE BREAKPOINTS
+
+// Breakpoints
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+
+@mobile-xs:      ~"only screen and (max-width: 360px)";
+	@mobile-xs-landscape: ~"only screen and (min-width: 361px)";
+@mobile-s:      ~"only screen and (max-width: 480px)";
+	@mobile-s-landscape: ~"only screen and (min-width: 481px)";
+
+@mobile:      ~"only screen and (max-width: 763px)";
+	@mobile-landscape:  ~"only screen and (max-width: 763px) and (orientation: landscape)";
+
+@tablet:      ~"only screen and (min-width: 768px) and (max-width: 1024px)";
+	@tablet-portrait:      ~"only screen and (min-width: 1024px) and (max-width: 768px)";
+
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+	@desktop-xl:  ~"only screen and (min-width: 1080px)";
