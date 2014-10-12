@@ -1,0 +1,13 @@
+.sm-page-tabs {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+[data-tabs="nav-v"] {
+  width: 300px;
+}
+[data-tabs="nav-v"] > li {
+  width: 100%;
+  display: block;
+  float: left;
+}

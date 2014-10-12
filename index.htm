@@ -23,15 +23,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="l-vert">
 
     <div class="window-wrapper">
 
       <div class="header-nav-wrapper">
 
         <!-- HEADER -->
-        <header>
-          <div class="logo"></div>
+        <header> 
+          <div class="logo">
+            <img src="img/svg/media-icon.svg" alt="">
+
+
+          </div>
 
           <div class="user-info">
             
@@ -45,16 +49,19 @@
 
           <div class="nav-items-list">
 
-          <div class="nav-item">
-            <button class="trigger" data-nav="nav-item" data-toggle="nav-sub-menu"  aria-labelledby="nav-item-media" aria-hidden="true">Media</button>  
-          </div>
+            <div class="nav-item">
+              <button class="trigger" data-nav="nav-item" data-toggle="nav-sub-menu"  aria-labelledby="nav-item-media" aria-hidden="true">Media</button>  
+            </div>
 
-          <div class="nav-item">
-            <button class="trigger" data-nav="nav-item" data-toggle="nav-sub-menu" aria-labelledby="nav-item-admin" aria-hidden="true">Administration</button>  
-          </div>
+            <div class="nav-item">
+              <button class="trigger" data-nav="nav-item" data-toggle="nav-sub-menu" aria-labelledby="nav-item-admin" aria-hidden="true">Administration</button>  
+            </div>
+
+            <div class="nav-item">
+              <button class="trigger" data-nav="nav-item" data-toggle="nav-sub-menu" aria-labelledby="nav-item-subscriptions" aria-hidden="true">Subscriptions</button>  
+            </div>
 
           </div>
-
         </nav>
         <!-- NAVIGATION END -->
 
@@ -63,7 +70,11 @@
         <div class="nav-sub-menu" data-nav="sub-menu" role="nav-sub-menu" aria-labelledby="nav-sub-menu" aria-hidden="true">
           
           <section class="content-wrapper" aria-labelledby="sub-menu" aria-hidden="true">
-            Stuff
+            
+            <article class="area-module">
+              
+            </article>
+
           </section>
 
           
@@ -95,36 +106,36 @@
                           <a href="#">
                             <em>27</em>  
                             <span>Drafts</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
-                          </a>                      
+<!--                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
+ -->                          </a>                      
                         </li>
                         <li class="summary-list-item wt-val">
                           <a href="#">
                             <em>9</em>
                             <span>Waiting for validation</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
-                          </a>
+<!--                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
+ -->                          </a>
                         </li>
                         <li class="summary-list-item val-npb">
                           <a href="#">
                             <em>11</em> 
                             <span>Validated but not published</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
-                          </a>
+<!--                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
+ -->                          </a>
                         </li>
                         <li class="summary-list-item val-pb">
                           <a href="#">
                             <em>27</em> 
                             <span>Published</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
-                          </a>
+<!--                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
+ -->                          </a>
                         </li>
                         <li class="summary-list-item rej">
                           <a href="#">
                             <em>2</em> 
                             <span>Rejected</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
-                          </a>
+<!--                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-right"><polygon points="10,6 8.6,7.4 13.2,12 8.6,16.6 10,18 16,12 "></polygon></g></svg>
+ -->                          </a>
                         </li>
                       </ul>
                     </div>
@@ -184,19 +195,19 @@
                     <div class="title">Last 3 published</div>
                     <div class="body">
                       <ul class="summary-list">
-                        <li class="summary-list-item blank">
+                        <li class="summary-list-item val-pb">
                           <a href="">
                             <em>PNG</em>
                             <span>milk-bottle.png</span>
                           </a>
                         </li>
-                        <li class="summary-list-item blank">
+                        <li class="summary-list-item val-pb">
                           <a href="#">
                             <em>PNG</em>
                             <span>milk-bottle-left.png</span>
                           </a>
                         </li>
-                        <li class="summary-list-item blank">
+                        <li class="summary-list-item val-pb">
                           <a href="#">
                             <em>PDF</em>
                             <span>milk-bottle-back.png</span>
@@ -233,6 +244,8 @@
 
 
     </div>
+
+    <!--<div class="overlay-global"></div>-->
 
    
 
