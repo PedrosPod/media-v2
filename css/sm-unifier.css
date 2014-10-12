@@ -1265,11 +1265,62 @@ left:calc(200px + 15px);
   position: relative;
   float: left;
 }
-[data-tabs="tab-nav"][data-tabs-layout="vertical"] {
-  width: 300px;
+.tabs-fixed-vertical {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0 ;
+  left: 0;
 }
-[data-tabs="tab-nav"][data-tabs-layout="vertical"] > li {
-  width: 100%;
+.tabs-fixed-vertical .nav-tabs {
+  width: 200px;
+  height: 100%;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #617374;
+}
+.tabs-fixed-vertical .nav-tabs > li {
   display: block;
-  float: left;
+  width: 100%;
+  border-bottom: 1px solid #4b5665;
+}
+.tabs-fixed-vertical .nav-tabs > li > a {
+  padding: 10px 15px;
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border: 0;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #95a5a6;
+}
+.tabs-fixed-vertical .nav-tabs > li > a:hover {
+  background: transparent;
+  border: 0;
+}
+.tabs-fixed-vertical .nav-tabs > li.active > a {
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+}
+.tabs-fixed-vertical .nav-tabs > li.active > a:hover {
+  background: transparent;
+  border: 0;
+}
+.tabs-fixed-vertical .tab-content {
+  padding: 30px;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  background: #ffffff;
 }

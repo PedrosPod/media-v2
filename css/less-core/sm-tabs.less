@@ -10,27 +10,105 @@
 	float: left;
 }
 
-
-[data-tabs="tab-nav"]
+.tabs-fixed-vertical
 {
-	&[data-tabs-layout="vertical"]
+
+	@side-bar-width: 200px;
+
+	// position
+	position: fixed;
+	top: 80px; right: 0; bottom: 0 ; left: 0;
+
+	// fonts
+
+	.nav-tabs
 	{
 		// box
-		width: 300px;
-
+		width: @side-bar-width;
+		height: 100%;
+		padding-top: 30px;
+		
 		// position
+		position: absolute;
+		top: 0; bottom: 0; left: 0;
 
 
 		// visual
+		background: @cl-gray-dark;
+		//border-right: 1px solid @border-cl;
 
 		& > li
 		{
-			// box
-			width: 100%;
+			//box
 			display: block;
+			width: 100%;
+			
 
-			// position
-			float: left;
+			// visual
+			border-bottom: 1px solid darken(@cl-gray-styled, 3%);
+
+
+			& > a 
+			{
+				// box
+				padding: 10px 15px;
+
+				// visual
+				.border-radius(0);
+				border: 0;
+				background: transparent;
+
+				
+				
+
+				// fonts
+				font-size: 0.75rem;
+				font-weight: 500;
+				color: @cl-gray;
+
+				&:hover
+				{
+					background: transparent;
+					border: 0;
+				}
+
+			}
+
+			&.active
+			{
+				& > a
+				{
+
+					// visual
+					background: transparent;
+					border: 0;
+
+					// fonts
+					color: @cl-white;
+
+					&:hover
+					{
+						background: transparent;
+						border: 0;
+					}
+				}	
+			}
+
 		}
 	}
+
+	.tab-content
+	{
+		// box
+		padding: 30px;
+		overflow-y: auto;
+
+		// position
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: @side-bar-width;
+
+		// visual
+		background: @cl-white;
+	}
 }
+
