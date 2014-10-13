@@ -26,6 +26,7 @@ $('[data-nav="nav-item"]').on('click', function(){
 		$(this).parent().removeClass('is-active');
 		$('[data-nav="sub-menu"]').removeClass('is-visible');
 
+
 	} else
 	{
 		$('[data-nav="nav-item"]').parent().removeClass('is-active');
@@ -57,4 +58,22 @@ $('[data-action="delete-item"]').on('click', function(e){
     function(){
         swal("Deleted!", "The item was sucessfully deleted.", "success");
     });
+});
+
+
+
+// Layout selection
+
+$('[data-list-control="row"]').on('click', function(){
+
+    $(this).addClass('is-active');
+    $('[data-list-control="grid"]').removeClass('is-active');
+    $('[data-list="results"]').addClass('l-row');
+});
+
+$('[data-list-control="grid"]').on('click', function(){
+
+    $(this).addClass('is-active');
+    $('[data-list-control="row"]').removeClass('is-active');
+    $('[data-list="results"]').removeClass('l-row');
 });

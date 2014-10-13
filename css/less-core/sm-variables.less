@@ -1,7 +1,21 @@
+// GLOBAL LAYOUT SIZES
+@sidebar-left-w: 220px;
+@sidebar-right-w: 300px;
+
+@header-h: 80px;
+
+
 // FONTS
 
 @font-default: 'Open Sans', sans-serif;
 @font-headings: 'Roboto', sans-serif; 
+
+
+	// FONTS - Colors
+	@font-cl-black: rgba(60,60,60,1);
+	@font-cl-gray-dark: rgba(110,110,110,1);
+	@font-cl-gray: rgba(180,180,180,1);
+	@font-cl-gray-ligth: rgba(220,220,220,1);
 
 // COLORS 
 @cl-body: rgba(249, 249, 251, 1);
@@ -13,9 +27,10 @@
 @cl-black: rgba(50, 50, 50, 1);
 
 // grays
-@cl-gray: rgba(149, 165, 166, 1);
+@cl-gray: rgba(189, 195, 199, 1);
+	@cl-gray-darkest: darken(@cl-gray, 40%);
 	@cl-gray-dark: darken(@cl-gray, 20%);
-	@cl-gray-light: lighten(@cl-gray, 35%);
+	@cl-gray-light: lighten(@cl-gray, 20%);
 	@cl-gray-styled: rgba(81, 93, 110, 1);
 
 // blues
@@ -39,7 +54,7 @@
 // DEFAULT PROPERTIES COLORS
 
 @border-cl: rgba(222, 222, 222, 1);
-	@border-cl-light: lighten(@border-cl, 8%);
+	@border-cl-light: lighten(@border-cl, 7%);
 
 
 

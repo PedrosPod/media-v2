@@ -2,9 +2,8 @@
 {
 	
 	// Variables
-	@header-h: 80px;
-	@logo-container-w: 200px;
-	@user-info-w: 200px;
+
+
 
 	// position  
 	position: absolute;
@@ -30,9 +29,9 @@
 		z-index: 2;
 
 		// visual
-		background: rgba(255,255,255,1);
-		border-bottom: 1px solid rgba(230,230,230,1);
-		.box-shadow(~"0px 1px 2px rgba(0,0,0,.06), inset 0px 5px 0px @{cl-main}");
+		background: @cl-white;
+		//border-bottom: 1px solid @border-cl;
+		.box-shadow(~"0px 1px 2px rgba(0,0,0,.15)");
  
 	}
 
@@ -41,7 +40,7 @@
 	{
 		
 		// box
-		width: @logo-container-w;
+		width: @sidebar-left-w;
 		height: 100%;
 
 		// position
@@ -49,7 +48,7 @@
 		top: 0; left: 0;
 
 		// visual
-		border-right: 1px solid rgba(0,0,0,.06);
+		border-right: 1px solid @border-cl-light;
 
 		// font
 		text-align: center;
@@ -74,7 +73,7 @@
 	.user-info
 	{
 		// box
-		width: @user-info-w;
+		width: @sidebar-left-w;
 		height: @header-h;
 
 		// position
@@ -83,7 +82,7 @@
 		right: 0;
 
 		// visual
-		border: 1px solid rgba(0,0,0,.06);
+		border: 1px solid @border-cl-light;
 		border-width: 0 0 0 1px;
 	}
 
@@ -96,8 +95,8 @@
 		// position
 		position: absolute;
 		top: 0;
-		.calc(left, ~'@{logo-container-w} + 15px');
-		right: @user-info-w;
+		.calc(left, ~'@{sidebar-left-w} + 15px');
+		right: @sidebar-left-w;
 		z-index: 2;
 
 		
@@ -207,14 +206,13 @@
 		// box
 		width: 250px;
 		height: 300px;
-		margin: 30px;
 
 		// position
 		position: relative;
 		
 
 		// visual
-		background: @cl-white;
+		background: @cl-white; 
 		.border-radius(4px);
 		.box-shadow(~"0px 1px 2px rgba(0,0,0,.1)");
 		border: 1px solid @border-cl;
