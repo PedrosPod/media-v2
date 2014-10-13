@@ -1627,15 +1627,14 @@ left:calc(220px + 15px);
 }
 .media-list-mainContent .list-item .content-holder .media-status {
   position: absolute;
-  top: -90%;
-  right: 15px;
+  top: -95%;
+  right: 10px;
   z-index: 1;
-  opacity: 0.5;
 }
 .media-list-mainContent .list-item .content-holder .media-status:after {
   display: block;
-  padding: 0 10px;
-  height: 20px;
+  padding: 0 8px;
+  height: 16px;
   -webkit-border-radius: 40px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 40px;
@@ -1649,19 +1648,19 @@ left:calc(220px + 15px);
 }
 .media-list-mainContent .list-item .content-holder .media-status.published:after {
   background: #5ab83c;
-  content: 'Published';
+  content: '';
 }
 .media-list-mainContent .list-item .content-holder .media-status.waiting:after {
   background: #ffd21d;
-  content: 'Waiting validation';
+  content: '';
 }
 .media-list-mainContent .list-item .content-holder .media-status.validated:after {
   background: #39a4ff;
-  content: 'Validated';
+  content: '';
 }
 .media-list-mainContent .list-item .content-holder .media-status.rejected:after {
   background: #e45539;
-  content: 'Rejected';
+  content: '';
 }
 .media-list-mainContent .list-item .content-holder .thumb-info {
   width: 100%;
