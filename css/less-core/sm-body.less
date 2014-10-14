@@ -264,7 +264,7 @@
 	// visual
 	list-style: none;
 	//border-bottom: 1px solid @border-cl-light;
-	.box-shadow(~"0px 2px 2px -1px rgba(0,0,0,.2)");
+	.box-shadow(~"0px 3px 2px -1px rgba(0,0,0,.1)");
 	background: @cl-white;
 
 	li
@@ -275,6 +275,9 @@
 		
 		// position
 		float: left;
+
+		// visual
+
 
 		&.left
 		{
@@ -290,7 +293,7 @@
 	.tab-action
 	{
 		// box
-		margin: 0 15px;
+		padding: 0 15px;
 		height: 100%;
 
 		// position
@@ -301,11 +304,12 @@
 		// visual
 		background: none;
 		border: none;
+		//border-right: 1px solid @border-cl-light;
 
 		// fonts
 		font-size: 1rem;
 		font-weight: 500;
-		color: @cl-gray;
+		color: @cl-gray-dark;
 
 		// animations
 		.transition;
