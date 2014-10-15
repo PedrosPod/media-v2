@@ -1,0 +1,372 @@
+// Nav
+.main-nav-wrapper
+{
+	// box
+
+	height: @header-h;
+
+	// position
+	position: absolute;
+	top: 0;
+	left: @sidebar-left-w;
+	right: @user-info;
+	z-index: 2;
+
+
+}
+nav
+{
+	// box
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+	// position
+	z-index: 1;
+	
+	
+	// visual
+	//background: @cl-white;
+	
+
+	// fonts
+	font-size: 1rem;
+
+
+	.nav-items-list
+	{
+		// box
+		display: block;
+
+		// position
+		position: relative;
+		left: 50%;
+		.translateX(-50%);
+
+		// fonts
+		text-align: center;
+
+		// visual
+
+	}
+
+	.nav-item
+	{
+		// box
+		width: auto;
+		height: @header-h;
+		padding: 0 15px;
+
+		display: inline-block;
+
+		// position
+		position: relative;
+
+		
+		// visual
+
+		// transitions & animations
+		.transition;
+
+		
+		.trigger
+		{
+			// box
+			height: 35px;
+			
+			// position
+			position: relative;
+			top: 50%;
+			.translateY(-50%); 
+
+			// visual
+			border: 0px;
+			background: none;
+
+			// fonts
+			
+			outline: none;
+
+			// animations
+			.transition;
+
+			svg,
+			span
+			{
+				
+			}
+
+			svg
+			{
+				// box
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+				
+
+				// position
+				float: left;
+
+				// visual
+				fill: @cl-gray-light;
+
+				// animations
+				.transition;
+
+			}
+			span
+			{
+				// box
+
+				// position
+				float: right;
+
+				// fonts
+				line-height: 30px;
+				font-size: 0.815em;
+				font-weight: 700;
+				//text-transform: uppercase;
+				color: rgba(0,0,0,0.3);
+
+				// animations
+				.transition;
+			}
+
+			&:hover 
+			{
+				span
+				{
+					color: @cl-gray-darkest;
+				}
+				
+				svg
+				{
+					fill: @cl-gray;
+				}
+			}
+
+
+		}
+
+		&.is-active
+		{
+			.trigger 
+			{
+				span
+				{
+					color: @cl-black; 
+				}
+
+				svg
+				{
+					fill: @cl-black;
+				}
+				
+
+			}
+			.box-shadow(~"inset 0px -3px 0px @{cl-main}");
+			//.box-shadow(~"inset 0 2px 3px 1px rgba(0,0,0,.1), inset 0px 2px 20px rgba(0,0,0,.1), inset 0px 2px 3px -1px rgba(0,0,0,.1)"); 
+		}
+	}
+}
+
+.main-nav-menu
+{
+	// box
+	width: 100%;
+	height: 350px;
+	display: none;
+
+	// position
+	position: relative;
+	top: 0;
+	.translateY(-200%);
+
+
+	// visual
+	background: rgba(250,250,250,1);
+	border-bottom: 1px solid @border-cl;
+	.box-shadow(~"0px 5px 15px -3px rgba(0,0,0,.15)");
+
+	// animations
+	.transition(~"all 500ms ease-in-out");
+
+	&.is-visible
+	{
+		.translateY(0%);
+		z-index: 0;
+	} 
+}
+
+.area-module
+{
+	// box
+	width: 250px;
+	height: 300px;
+
+	// position
+	position: relative;
+	
+
+	// visual
+	background: @cl-white; 
+	.border-radius(4px);
+	.box-shadow(~"0px 1px 2px rgba(0,0,0,.1)");
+	border: 1px solid @border-cl;
+}
+
+
+// Side Navigation
+
+.has-side-nav
+{
+	@nav-left-w: 140px; 
+	
+	// HEADER
+	.header-wrapper
+	{
+		.logo
+		{
+			width: @nav-left-w;
+		}
+	}
+
+	// NAV
+	.main-nav-wrapper
+	{
+		// box
+		width: @nav-left-w;
+		height: auto;
+
+		// position
+		top: @header-h; right: auto; bottom: 0; left: 0;
+		z-index: 0;
+
+		// font
+		
+
+		// visual
+
+
+		nav
+		{
+			// box
+
+			// visual
+			background: @cl-gray-light;
+			border-right: 1px solid @border-cl;
+		}
+
+		.nav-item
+		{
+			// box
+			width: 100%;
+			height: 100px;
+			margin: 0; 
+			padding:0;
+
+			// position
+			position: relative;
+			float: left;
+
+			// background
+			
+
+			// font
+			text-align: center;
+
+			.trigger
+			{
+				// box
+				width: 100%;
+				height: 100%;
+				margin: 0; 
+				padding:0;
+
+				// position
+				top: auto;
+				.translateY(0%);
+
+				// visual
+
+				
+				span
+				{
+					// position
+					position: absolute;
+					bottom: 15px;
+					left: 50%;
+					.translateX(-50%);
+
+					// visual
+
+					// fonts
+					font-weight: 600;
+					color: @cl-gray;
+					text-transform: none;
+					font-size: 1.1em;
+
+					// animations
+					.transition;
+				}
+
+				svg
+				{
+					// box
+					width: 40px;
+					height: 40px;
+					margin-top: -20px;
+
+					// position
+					position: relative;
+					top: 50%;
+					left: 50%;
+					.translateX(-50%);
+
+
+					// visual
+					fill: @cl-gray;
+
+					// animations
+					.transition;
+				}
+
+				&:hover
+				{
+
+					// visual
+					
+					span
+					{
+						color: @cl-gray-darkest;
+					}
+					svg
+					{
+						fill: @cl-gray-darkest;
+					}
+				}
+
+			}
+			&.is-active
+			{
+				.trigger
+				{
+					border: 0;
+					background: @cl-blue; 
+
+					span { color: @cl-white }
+					svg { fill: @cl-white }
+				}
+				
+			}
+		} 
+}
+
+	// BODY
+	.body-wrapper
+	{
+		left: @nav-left-w;
+	}
+
+	
+}

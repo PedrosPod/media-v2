@@ -10,6 +10,7 @@
 	float: left;
 
 	// visual
+	outline: 0;
 	border: 1px solid darken(@cl-gray, 10%);
 	.border-radius(3px);
 	background: @cl-gray;
@@ -25,6 +26,7 @@
 	{
 		// visual
 		background: lighten(@cl-gray,5%);
+		outline: 0;
 	}
 
 	&:active
@@ -32,24 +34,57 @@
 		// visual
 		.box-shadow(~"inset 0px 2px 5px -1px rgba(0,0,0,.4)");
 		background: darken(@cl-gray, 5%);
+		outline: 0;
+	}
+
+
+	// Clear
+	&.clear
+	{
+		// box
+		margin: 0 5px;
+		height: 45px;
+
+		// visual
+		background: none;
+		border: none;
+		.box-shadow(~"none");
+		.border-radius(0);
+
+
+		// fonts
+		color: @cl-gray-dark;
+		text-align: center;
+
+		&:hover
+		{
+			color: @cl-gray-darkest;
+			.box-shadow(~"inset 0px -2px 0px @{cl-blue}");
+		}
+
 	}
 
 	&.blue
 	{
 		// visual
 		background: @cl-blue;
+		border-color: darken(@cl-blue, 8%);
 
 		// fonts
 		color: @cl-white;
 
 		&:hover
 		{
-
+			// visual
+			background: lighten(@cl-blue,8%);
+			
 		}
 
 		&:active
 		{
-			
+			// visual
+			.box-shadow(~"inset 0px 2px 5px -1px rgba(0,0,0,.4)");
+			background: darken(@cl-blue, 5%);
 		}
 	}
 
@@ -81,6 +116,30 @@
 			// visual
 			border-right-width: 1px;
 			.border-radius(0 3px 3px 0);
+		}
+
+		&.clear
+		{
+			// box
+			margin: 0 15px;
+			padding: 0 15px;
+
+			// visual
+
+			border: 0;
+			//border-right: 1px solid @border-cl-light;
+
+			&:last-of-type,
+			&:first-of-type
+			{
+				.border-radius(0);
+				border: 0;
+			}
+
+
+			
+
+
 		}
 	}
 }
