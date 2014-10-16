@@ -10,7 +10,7 @@
     <link href="css/sm-unifier.css" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Google fonts -->
     <link href='css/google-fonts.css' rel='stylesheet' type='text/css'>
@@ -172,16 +172,14 @@
     
       
     
-      <div class="body-wrapper">
+  
 
         <!-- MAIN BODY CONTAINER -->
         
-        <section class="body-container">
-          
-          <div class="media-list-wrapper">
-
+        <section class="body-wrapper">
+ 
             <!-- Left Sidebar -->
-            <div class="media-list-sidebarLeft sidebar-l cl-sch white">
+            <div class="sm-sidebar-left sidebar-l">
               
               <div class="search-module">
                 <input type="text" class="search-input" placeholder="Search for media...">
@@ -204,20 +202,20 @@
                 </li>
                 <li class="summary-list-item">
                   <a href="">
-                    <em class="counter">27</em>
+                    <em class="counter fl-right">27</em>
                     <span>Trade Item Image</span>
                   </a>
                 </li>
                 <li class="summary-list-title">Media Type</li>
                 <li class="summary-list-item">
                   <a href="#">
-                    <em class="counter">11</em>
+                    <em class="counter fl-right">11</em>
                     <span>Images</span>
                   </a>
                 </li>
                 <li class="summary-list-item">
                   <a href="#">
-                    <em class="counter">9</em>
+                    <em class="counter fl-right">9</em>
                     <span>PDF</span>
                   </a>
                 </li>
@@ -226,51 +224,54 @@
             <!-- Left Sidebar END -->
 
             <!-- Main list center  -->
-            <div class="media-list-mainContent has-action-bar">
+            <div class="sm-main-content bg-gray-light">
+              <!-- Global Action Bar -->
+                <ul class="global-action-bar">
+                  <li class="left">
+                    <button class="tab-action">Download images</button>
+                 
+                  </li>
 
-            <!-- Global Action Bar -->
-            <ul class="global-action-bar">
-              <li class="left">
-                <button class="tab-action">Download images</button>
-             
-              </li>
+                  <li class="right">
+                    <button class="tab-action neg" data-action="delete-item">Delete images</button>
+                  </li>
+                </ul>
+              
 
-              <li class="right">
-                <button class="tab-action neg" data-action="delete-item">Delete images</button>
-              </li>
-            </ul>
+              <div class="container-fluid has-action-bar">
 
-              <div class="list-info">
-                <div class="list-results-summary">
-                  Showing <strong>1</strong> to <strong>10</strong> of <strong><em>674 results.</em></strong> 
+                <div class="list-info">
+                  <div class="list-results-summary">
+                    Showing <strong>1</strong> to <strong>10</strong> of <strong><em>674 results.</em></strong> 
+                  </div>
+                  <div class="list-layout" data-list="layout-control">
+                    <button class="layout-type" data-list-control="row">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                          <rect x="4" y="11.491" width="56" height="4.801"/>
+                          <rect x="4" y="29.453" width="56" height="4.801"/>
+                          <rect x="4" y="47.707" width="56" height="4.803"/>
+                      </svg>
+                    </button>
+                    <button class="layout-type is-active" data-list-control="grid">
+                      <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <g>
+                          <path d="M41.351,2.25H4.25c-1.104,0-2,0.896-2,2v37.102c0,1.104,0.896,2,2,2h37.101c1.104,0,2-0.896,2-2V4.25
+                            C43.351,3.146,42.455,2.25,41.351,2.25z"/>
+                          <path d="M95.75,2.25H58.649c-1.104,0-2,0.896-2,2v37.102c0,1.104,0.896,2,2,2H95.75c1.104,0,2-0.896,2-2V4.25
+                            C97.75,3.146,96.855,2.25,95.75,2.25z"/>
+                          <path d="M41.351,56.649H4.25c-1.104,0-2,0.896-2,2V95.75c0,1.104,0.896,2,2,2h37.101c1.104,0,2-0.896,2-2V58.649
+                            C43.351,57.545,42.455,56.649,41.351,56.649z"/>
+                          <path d="M95.75,56.649H58.649c-1.104,0-2,0.896-2,2V95.75c0,1.104,0.896,2,2,2H95.75c1.104,0,2-0.896,2-2V58.649
+                            C97.75,57.545,96.855,56.649,95.75,56.649z"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <div class="list-layout" data-list="layout-control">
-                  <button class="layout-type" data-list-control="row">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                        <rect x="4" y="11.491" width="56" height="4.801"/>
-                        <rect x="4" y="29.453" width="56" height="4.801"/>
-                        <rect x="4" y="47.707" width="56" height="4.803"/>
-                    </svg>
-                  </button>
-                  <button class="layout-type is-active" data-list-control="grid">
-                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                      <g>
-                        <path d="M41.351,2.25H4.25c-1.104,0-2,0.896-2,2v37.102c0,1.104,0.896,2,2,2h37.101c1.104,0,2-0.896,2-2V4.25
-                          C43.351,3.146,42.455,2.25,41.351,2.25z"/>
-                        <path d="M95.75,2.25H58.649c-1.104,0-2,0.896-2,2v37.102c0,1.104,0.896,2,2,2H95.75c1.104,0,2-0.896,2-2V4.25
-                          C97.75,3.146,96.855,2.25,95.75,2.25z"/>
-                        <path d="M41.351,56.649H4.25c-1.104,0-2,0.896-2,2V95.75c0,1.104,0.896,2,2,2h37.101c1.104,0,2-0.896,2-2V58.649
-                          C43.351,57.545,42.455,56.649,41.351,56.649z"/>
-                        <path d="M95.75,56.649H58.649c-1.104,0-2,0.896-2,2V95.75c0,1.104,0.896,2,2,2H95.75c1.104,0,2-0.896,2-2V58.649
-                          C97.75,57.545,96.855,56.649,95.75,56.649z"/>
-                      </g>
-                    </svg>
-                  </button>
-                </div>
-              </div>
 
-              <ul class="container-fluid list-results" data-list="results">
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <ul class="list-results" data-list="results">
+
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -346,7 +347,7 @@
                   </div>
                 </li>
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -419,10 +420,9 @@
                       </div>
                     </div>
                   </div>
-
                 </li>
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -498,7 +498,7 @@
 
                 </li>
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -574,7 +574,7 @@
 
                 </li>
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
               
                   <div class="list-item">
                     <div class="file-thumb">
@@ -651,7 +651,7 @@
                 </li>
 
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -728,7 +728,7 @@
                 </li>
 
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -805,7 +805,7 @@
                 </li>
 
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -882,7 +882,7 @@
 
                 </li>
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                   <div class="list-item">
                     <div class="file-thumb">
@@ -959,7 +959,7 @@
                 </li>
 
 
-                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <li class="col-xlg-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
   
                   <div class="list-item">
                     <div class="file-thumb">
@@ -1034,14 +1034,16 @@
                   </div>
 
                 </li>
-
-           
               </ul>
+                
+              </div>
+
+              
             </div>
             <!-- Main list center END -->
 
             <!-- Right Sidebar  -->
-            <div class="media-list-sidebarRight preview-pane" data-widget="right-pane">
+            <div class="sm-sidebar-right preview-pane" data-widget="right-pane">
 
                   <div class="preview-thumbnail">
                     <div class="img-container">
@@ -1072,7 +1074,7 @@
                       <div class="tab-pane active" id="home">
                         
                         <div class="container-fluid">
-                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                             <span class="media-info-property">
                               <strong>Label here</strong>
@@ -1094,10 +1096,6 @@
                               Some value here
                             </span>
 
-
-
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <span class="media-info-property">
                               <strong>Label here</strong>
                               Some value here
@@ -1127,19 +1125,14 @@
                 
                     </div>
                   </div>
-
-             
-              
             </div>
             <!-- Right Sidebar END -->
 
-          </div>
-
+          
         </section>
 
         <!-- MAIN BODY CONTAINER END -->
-      </div>
-
+    
 
       
       <!-- Footer -->

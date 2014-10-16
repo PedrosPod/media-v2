@@ -10,103 +10,114 @@
 	float: left;
 }
 
-.tabs-fixed-vertical
+.tabs-view
 {
 
-
+	
 	// position
-	position: fixed;
-	top: 80px; right: 0; bottom: 0 ; left: 0;
 
 	// fonts
+	font-size: 1rem;
 
 	.nav-tabs
 	{
-		// box
-		width: @sidebar-left-w;
-		height: 100%;
-		padding-top: 30px;
-		
-		// position
-		position: absolute;
-		top: 0; bottom: 0; left: 0;
-
-
-		// visual
-		background: transparent; 
-		border-right: 1px solid @border-cl; 
-
-		& > li
+		&.full-page
 		{
-			//box
-			display: block;
-			width: 100%;
+			// box
+			width: @sidebar-left-w;
+			height: 100%;
+			padding-top: 15px;
 			
+			// position
+			position: absolute;
+			top: 0; bottom: 0; left: 0;
+
 
 			// visual
+			background: transparent; 
+			border-right: 1px solid @border-cl; 
 
-
-			& > a 
+			& > li
 			{
-				// box
-				padding: 10px 15px;
+				//box
+				display: block;
+				width: 100%;
+				
 
 				// visual
-				.border-radius(0);
-				border: 0;
-				background: transparent;
 
-				
-				
 
-				// fonts
-				font-size: 0.75rem;
-				font-weight: 600;
-				color: @cl-gray;
-
-				&:hover
+				& > a 
 				{
-					background: transparent;
-					border: 0;
-				}
-
-			}
-
-			&.active
-			{
-				& > a
-				{
+					// box
+					padding: 10px 15px;
 
 					// visual
-					background: transparent;
+					.border-radius(0);
 					border: 0;
+					background: transparent;
+
+					
+					
 
 					// fonts
-					color: @cl-main;
+					font-size: 0.815rem;
+					font-weight: 600;
+					color: @cl-gray;
 
 					&:hover
 					{
 						background: transparent;
 						border: 0;
 					}
-				}	
-			}
 
+				}
+
+				&.active
+				{
+					& > a
+					{
+
+						// visual
+						background: transparent;
+						border: 0;
+
+						// fonts
+						color: @cl-blue;
+
+						&:hover
+						{
+							background: transparent;
+							border: 0;
+						}
+					}	
+				}
+			}
 		}
 	}
 
 	.tab-content
 	{
-		// box
-		padding: 80px 30px 30px;
-		overflow-y: auto;
 
-		// position
-		position: absolute;
-		top: 0; right: 0; bottom: 0; left: @sidebar-left-w;
+		&.full-page
+		{
+			// box
+			background: @cl-white;
 
-		// visual
-		background: @cl-white;
+			// position
+			position: absolute;
+			bottom :0;
+
+			.tab-pane
+			{
+				// box
+				margin-top: -45px;
+				padding: 30px;
+
+				// position
+			}
+		}
+		
 	}
 
 	

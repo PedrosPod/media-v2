@@ -20,9 +20,12 @@
 
 
 // MAIN ELEMENT COLORS 
-@cl-body: rgba(245, 245, 245, 1);
+@cl-body: rgba(243,244,246,1);
 @cl-main: rgba(245, 127, 23, 1);
 @cl-sec: rgba(100,100,100,1);
+@cl-header: @cl-white;
+@cl-sidebar-left: @cl-white;
+@cl-action-bar: @cl-white;
 
 
 // neutrals
@@ -30,10 +33,11 @@
 @cl-black: rgba(50, 50, 50, 1);
 
 // grays
-@cl-gray: rgba(189, 195, 199, 1);
+@cl-gray: rgba(220, 220, 220, 1);
 	@cl-gray-darkest: rgba(53, 60, 69, 1);
 	@cl-gray-dark: darken(@cl-gray, 20%);
-	@cl-gray-light: lighten(@cl-gray, 15%);
+	@cl-gray-light: lighten(@cl-gray, 5%);
+	@cl-gray-lightest: lighten(@cl-gray, 20%);
 	@cl-gray-styled: rgba(95, 95, 110, 1);
 
 // blues
@@ -43,22 +47,25 @@
 // greens
 @cl-green: rgba(90, 184, 60, 1);
 	@cl-green-light: rgba(176, 200, 164, 1);
+@cl-aqua: rgba(109, 209, 186, 1);
 
 // reds
 @cl-red: rgba(228, 85, 57, 1);
 
 // yellows
 
-@cl-yellow: rgba(255, 210, 29, 1);
-	@cl-yellow-dark: darken(@cl-yellow, 10%);
+@cl-yellow: rgba(245, 225, 91, 1);
+	@cl-yellow-dark: darken(@cl-yellow, 8%);
 	@cl-yellow-light: lighten(@cl-yellow, 20%);
 
 
 // DEFAULT PROPERTIES COLORS
-
-@border-cl: rgba(222, 222, 222, 1);
-	@border-cl-light: lighten(@border-cl, 6%);
-	@border-cl-dark: darken(@border-cl, 10%);
+@border-cl: darken(@cl-body,10%);
+	@border-cl-dark: darken(@cl-body,15%);
+	@border-cl-light: darken(@cl-body,2%);
+//@border-cl: rgba(222, 222, 222, 1);
+//	@border-cl-light: lighten(@border-cl, 6%);
+//	@border-cl-dark: darken(@border-cl, 10%);
 
 
 
